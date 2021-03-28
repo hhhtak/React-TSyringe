@@ -1,0 +1,19 @@
+{
+  "name": "react-tsyringe",
+  "version": "1.0.0",
+  "description": "TSyringe を使用して、DI を実現する",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hhhtak/React-TSyringe.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hhhtak/React-TSyringe/issues"
+  },
+  "homepage": "https://github.com/hhhtak/React-TSyringe#readme"
+}
