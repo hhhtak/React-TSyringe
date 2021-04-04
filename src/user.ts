@@ -1,11 +1,13 @@
-export default class User {
-  private _id: number | null
-  private _name: string
+import { injectable, inject } from 'tsyringe'
 
-  constructor(private database: DatabaseInterface) {
-    this._id = null
-    this._name = ''
-  }
+@injectable()
+export default class User {
+  private _id!: number | null
+  private _name!: string
+
+  constructor(
+    @inject('DatabaseInterface') private database: DatabaseInterface,
+  ) {}
 
   set id(value: number) {
     this._id = value
