@@ -1,6 +1,15 @@
 import React from 'react'
+import { container } from 'tsyringe'
+import { UserApiImpl } from './api/apiImpl'
+import { UserApi } from './api/api'
 import logo from './logo.svg'
 import './App.css'
+
+container.register('UserInterface', {
+  useClass: UserApiImpl,
+})
+
+const userApi = container.resolve(UserApiImpl)
 
 function App() {
   return (
